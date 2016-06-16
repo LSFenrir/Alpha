@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Routenberechnung</title>
+
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/Routenberechnung.css"/>
+
+</head>
+<body onload="init()">
+<img id="banner" src="img/Banner_HHN.jpg">
+<!--#################################################################################################################### Navigationsleiste!-->
+<nav class="navbar navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Menü</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="Routenberechnung.html">Routenberechnung</a></li>
+                <li><a href="Standortliste.html">HHN Standorte</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<!--#################################################################################################################### Kartencontainer mit Karte !-->
+<div id="map_container">
+    <div id="map">
+
+    </div>
+</div>
+<!--#################################################################################################################### Such- bzw- Optionsleiste !-->
+<div id="Suchleiste"><!-- Button to choose a routing location -->
+    <div class="dropup">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+            Route berechnen
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <li><a href="#">Route berechnen</a></li>
+            <li><a href="#">Campus Heilbronn-Sontheim</a></li>
+            <li><a href="#">Campus Heilbronn-Am Europaplatz</a></li>
+            <li><a href="#">Campus Künzelsau-Reinhold-Würth-Hochschule</a></li>
+            <li><a href="#">Campus Schwäbisch Hall</a></li>
+            <li><a href="#">Forschungsinkubator</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!--#################################################################################################################### Scripte !-->
+
+<script src="js/jquery.min.1.11.3.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<script type="text/javascript" src="../cordova.js"></script>
+<script src="js/map.js"></script>
+
+<script
+        async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS3yxVmpNXezscQ5-iCosaj0XyA_DE9Mg&callback=initMap">
+</script>
+</body>
+</html>
