@@ -1,7 +1,63 @@
+<!--<asd><!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="refresh" content="5; url=Routenberechnung.html"/>
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"/>
+
+    <link rel="stylesheet" type="text/css" href="css/csshake.min.css">
+
+
+    <title>Hello World</title>
+    <style>
+        body {
+            background-color: #bfbfbd;
+        }
+
+        img {
+            width: 70%;
+            left: 15%;
+            position: relative;
+
+            margin-top: 40%;
+        }
+
+        p {
+            position: relative;
+            text-align: center;
+            color: #fff;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            width: 100%;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<img src="img/Logo_HHN.png">
+
+<p class="shake-slow shake-constant">Laden. Bitte warten.</p>
+<p >Laden. Bitte warten.</p>
+
+</body>
+
+</html></asd>!-->
+
 <!DOCTYPE html>
 <!--
-    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
-
     Licensed to the Apache Software Foundation (ASF) under one
     or more contributor license agreements.  See the NOTICE file
     distributed with this work for additional information
@@ -20,62 +76,51 @@
     under the License.
 -->
 <html>
-
 <head>
-    <meta charset="utf-8"/>
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="msapplication-tap-highlight" content="no"/>
-    <meta name="viewport"
-          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
-    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
-    <meta http-equiv="Content-Security-Policy"
-          content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"/>
-    <!-- Good default declaration:
-    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-        * Enable inline JS: add 'unsafe-inline' to default-src
-        * Enable eval(): add 'unsafe-eval' to default-src
-    * Create your own at http://cspisawesome.com
-    -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
-
-    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <meta http-equiv="refresh" content="2; url=Routenberechnung.html"/>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <!--<link rel="stylesheet" type="text/css" href="css/index.css" />!-->
     <title>Hello World</title>
 </head>
-
 <body>
 <div class="app">
-    <h1>PhoneGap</h1>
     <div id="deviceready" class="blink">
-        <p class="event listening">Connecting to Device!!</p>
-        <p class="event received">Device is Ready!!</p>
+        <p class="event listening">
+        </p>
+        <p class="event received">Device is Ready</p>
     </div>
 </div>
-<style>
-    #map {
-        width: 500px;
-        height: 400px;
-    }
-</style>
-
-<div id="map"></div>
-<script>
-    function initMap() {
-        var mapDiv = document.getElementById('map');
-        var map = new google.maps.Map(mapDiv, {
-            center: {lat: 44.540, lng: -78.546},
-            zoom: 8
-        });
-    }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-        async defer></script>
-<script type="text/javascript" src="../cordova.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript">
     app.initialize();
 </script>
-</body>
 
+<style>
+    body {
+        background-color: #bfbfbd;
+    }
+
+
+    p {
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        background-attachment: fixed;
+        font-family: 'Segoe UI', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        left:50%;
+        margin-left: -100px;
+        width: 200px;
+        font-size: 16px;
+        text-transform: uppercase;
+        bottom:10%;
+    }
+
+
+</style>
+</body>
 </html>
