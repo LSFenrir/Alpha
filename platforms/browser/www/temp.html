@@ -7,16 +7,20 @@
 <body>
 
 <p id="out">Data</p>
-<button onclick="geoFindMe()"></button>
+<button onclick=""></button>
 
 <script>
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
         console.log("navigator.geolocation works well");
-        navigator.geolocation.getCurrentPosition(geolocationSuccess);
+        navigator.geolocation.getCurrentPosition(geolocationSuccess,geolocationError);
     }
     function geolocationSuccess() {
      document.getElementById("out").innerHTML="Success";
+    }
+    function geolocationError() {
+        document.getElementById("out").innerHTML="Error";
+
     }
 </script>
 
