@@ -13,15 +13,29 @@
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
         console.log("navigator.geolocation works well");
-        navigator.geolocation.getCurrentPosition(geolocationSuccess,geolocationError);
     }
-    function geolocationSuccess() {
-     document.getElementById("out").innerHTML="Success";
-    }
-    function geolocationError() {
-        document.getElementById("out").innerHTML="Error";
 
+    var onSuccess = function(position) {
+        document.getElementById("out").innerHTML=
+                'Latitude: '          + position.coords.latitude          + '\n' +
+                'Longitude: '         + position.coords.longitude         + '\n' +
+                'Altitude: '          + position.coords.altitude          + '\n' +
+                'Accuracy: '          + position.coords.accuracy          + '\n' +
+                'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
+                'Heading: '           + position.coords.heading           + '\n' +
+                'Speed: '             + position.coords.speed             + '\n' +
+                'Timestamp: '         + position.timestamp                + '\n';
+    };
+
+    // onError Callback receives a PositionError object
+    //
+    function onError(error) {
+        document.getElementById("out").innerHTML=
+                'code: '    + error.code    + '\n' +
+                'message: ' + error.message + '\n';
     }
+
+    navigator.geolocation.getCurrentPosition(onSuccess, onError);
 </script>
 
 <script type="text/javascript" src="../cordova.js"></script>
