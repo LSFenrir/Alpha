@@ -30,37 +30,7 @@ function initMap() {
         streetViewControl: false,
         rotateControl: false
     });
-}
 
-function swiperighthandler() {
-    if(locations_position>0)
-    {
-        locations_position--;
-        move_location_menu();
-    }
-}
-function swipelefthandler() {
-    if(locations_position<4)
-    {
-        locations_position++;
-        move_location_menu();
-    }
-}
-
-function show_locations() {
-
-    $("div#location_container").animate({
-        left: 0
-    }, 500, "swing", function () {
-    });
-
-
-}
-
-function move_location_menu() {
-    $("p.location").text(v_location[locations_position]);
-    $("p.street").text(v_street[locations_position]);
-    $("p.postcode").text(v_postcode[locations_position]);
 }
 
 function calc_route(){

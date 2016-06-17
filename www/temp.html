@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="out">Data</p>
+<button onclick="geoFindMe()"></button>
+
+<script>
+    document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady() {
+        console.log("navigator.geolocation works well");
+        navigator.geolocation.getCurrentPosition(geolocationSuccess);
+    }
+    function geolocationSuccess() {
+     document.getElementById("out").innerHTML="Success";
+    }
+</script>
+
+<script type="text/javascript" src="../cordova.js"></script>
+
+</body>
+</html>

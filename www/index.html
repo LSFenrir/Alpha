@@ -90,7 +90,7 @@
     <div id="deviceready" class="blink">
         <p class="event listening">
         </p>
-        <p class="event received" id="demo">Device is Ready</p>
+        <p class="event received">Device is Ready</p>
     </div>
 </div>
 <script type="text/javascript" src="cordova.js"></script>
@@ -98,20 +98,7 @@
 <script type="text/javascript">
     app.initialize();
 </script>
-<script>
-    var x = document.getElementById("demo");
-    function getLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-            x.innerHTML = "Geolocation is not supported by this browser.";
-        }
-    }
-    function showPosition(position) {
-        x.innerHTML = "Latitude: " + position.coords.latitude +
-                "<br>Longitude: " + position.coords.longitude;
-    }
-</script>
+
 
 <style>
     body {
