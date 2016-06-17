@@ -7,7 +7,7 @@
 <body>
 
 <p id="out">Data</p>
-<button onclick=""></button>
+<button onclick="navigator.geolocation.getCurrentPosition(onSuccess, onError);"></button>
 
 <script>
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -35,7 +35,7 @@
                 'message: ' + error.message + '\n';
     }
 
-    navigator.geolocation.getCurrentPosition(onSuccess, onError);
+
 </script>
 
 <script type="text/javascript" src="../cordova.js"></script>
