@@ -7,9 +7,14 @@
 <body>
 
 <p id="out">Data</p>
-<button onclick="navigator.geolocation.getCurrentPosition(onSuccess, onError);"></button>
+<button onclick="showlat()"></button>
 
 <script>
+    function showlat() {
+
+        document.getElementById("out").innerHTML='<%= Session["latitude"] %>';
+
+    }
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
         console.log("navigator.geolocation works well");
