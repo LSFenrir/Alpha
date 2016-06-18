@@ -24,3 +24,8 @@ navigator.geolocation.getCurrentPosition(function (position) {
 
 })
 }
+
+function createroute(target_lat, target_lng){
+
+
+}
