@@ -1,0 +1,41 @@
+div#map_container{
+
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:  1;
+    position: fixed;
+    background-color: grey;
+    padding:50px 0 50px 0 ;
+}
+div#map_container div#map{
+
+    height:100%;
+    width:100%;
+    background-color: rgba(100,100,100,0.3);
+}
+
+
+div#Suchleiste{
+
+    height:50px;
+    width: 100%;
+    bottom:0;
+    background-color: #898a8c;
+    position: fixed;
+    z-index: 12;
+
+}
+
+.dropup{
+
+    height:50px;
+    width: 100%;
+    left: 45%;
+    bottom:0;
+    background-color: #898a8c;
+    position: fixed;
+    z-index: 12;
+
+}
