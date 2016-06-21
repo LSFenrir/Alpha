@@ -33,9 +33,27 @@ function createroute(target_lat, target_lng){
 
 
 }
+function close_prev(){
 
-function standgebaeude() {
-    alert("Hallo");
+    $(".preview_container").css("display","none");
+}
+
+function standgebaeude(standort) {
+
+    if (!map) {
+
+       map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: lat_Gebaeude[standort-1], lng: len_Gebaude[standort-1]},
+            zoom: 18
+        });
+    }
+    else{
+        map.setCenter({lat:lat_Gebaeude[ort-1],lng:len_Gebaude[ort-1]});
+    }
+    $("dt.name").html(name[standort-1]);
+    $("dt.straße").html(straße[standort-1]);
+    $("dt.ort").html(ort[standort-1]);
+    $(".preview_container").css("display","block");
 
 
 
