@@ -25,14 +25,6 @@ navigator.geolocation.getCurrentPosition(function (position) {
 })
 }
 
-function initprevMap(){
-
-    map_prev = new google.maps.Map(document.getElementById('map'),{
-        center:{lat:10,lng:10},
-        zoom:19
-    });
-}
-
 function createroute(target_lat, target_lng){
 
 
