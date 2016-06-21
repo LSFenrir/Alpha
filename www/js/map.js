@@ -35,8 +35,19 @@ navigator.geolocation.getCurrentPosition(function (position) {
         title:'Position'
     })
 
-})
+});
+    /* Check for route
+    
+    var queryString = window.location.search.replace(/^\?/, '');
+    string = queryString.split('=');
+    alert(string[1]);
+    if(string[1]){
+        calcroute((string[1]-1));
+    }*/
+
 }
+
+
 
 
 function close_prev(){

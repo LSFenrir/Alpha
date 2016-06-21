@@ -69,5 +69,11 @@
         async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS3yxVmpNXezscQ5-iCosaj0XyA_DE9Mg&callback=initMap">
 </script>
+<script>
+
+    map.addEventListener('google-map-ready', function(e) {
+        alert('Map loaded!');
+    });
+</script>
 </body>
 </html>
