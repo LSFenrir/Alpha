@@ -33,3 +33,10 @@ function createroute(target_lat, target_lng){
 
 
 }
+
+function standgebaeude() {
+    alert("Hallo");
+
+
+
+}
