@@ -39,7 +39,7 @@
     </div>
 </nav>
 <!--#################################################################################################################### Content !-->
-<div class="content_container">
+<div class="swiper_container">
     <!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -88,13 +88,25 @@
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
+
+</div>
+<div class="preview_container">
+    <span class="glyphicon glyphicon-remove" style="right:10px;top: 10px; font-size:45px; position: absolute"></span>
+    <div id="map">
+
+    </div>
+
 </div>
 
 
 <!--#################################################################################################################### Scripte !-->
 <script src="js/jquery.min.1.11.3.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="js/map.js"></script>
+<script
+        async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS3yxVmpNXezscQ5-iCosaj0XyA_DE9Mg">
+</script>
 <script>
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
