@@ -49,7 +49,8 @@
                     <dt>Campus Heilbronn - <br>Sontheim</dt>
                     <dd>Max-Planck-Straße 39</dd>
                     <dd>74081 Heilbronn</dd>
-                    <dd><span class="glyphicon glyphicon-map-marker" aria-hidden="true" onclick="standgebaeude(1)"></span><a>Route berechnen</a></dd>
+                    <dd><span class="glyphicon glyphicon-map-marker" aria-hidden="true"
+                              onclick="standgebaeude(1)"></span><a onclick="calc(1)">Route berechnen</a></dd>
                 </dl>
             </div>
             <div class="swiper-slide">
@@ -57,7 +58,8 @@
                     <dt>Campus Heilbronn - <br>Am Europaplatz</dt>
                     <dd>Am Europaplatz 11</dd>
                     <dd>74076 Heilbronn</dd>
-                    <dd><span class="glyphicon glyphicon-map-marker" aria-hidden="true" onclick="standgebaeude(2)"></span><a>Route berechnen</a></dd>
+                    <dd><span class="glyphicon glyphicon-map-marker" aria-hidden="true"
+                              onclick="standgebaeude(2)"></span><a onclick="calc(2)" >Route berechnen</a></dd>
                 </dl>
             </div>
             <div class="swiper-slide">
@@ -65,7 +67,8 @@
                     <dt>Campus Künzelsau - <br>Reinhold-Würth-Hochschule</dt>
                     <dd>Daimlerstraße 35</dd>
                     <dd>74653 Künzelsau</dd>
-                    <dd><span class="glyphicon glyphicon-map-marker" aria-hidden="true" onclick="standgebaeude(3)"></span><a>Route berechnen</a></dd>
+                    <dd><span class="glyphicon glyphicon-map-marker" aria-hidden="true"
+                              onclick="standgebaeude(3)"></span><a onclick="calc(3)">Route berechnen</a></dd>
                 </dl>
             </div>
             <div class="swiper-slide">
@@ -73,7 +76,8 @@
                     <dt>Campus Schwäbisch Hall</dt>
                     <dd>Ziegeleiweg 4</dd>
                     <dd>74523 Schwäbisch Hall</dd>
-                    <dd><span class="glyphicon glyphicon-map-marker" aria-hidden="true" onclick="standgebaeude(4)"></span><a>Route berechnen</a></dd>
+                    <dd><span class="glyphicon glyphicon-map-marker" aria-hidden="true"
+                              onclick="standgebaeude(4)"></span><a onclick="calc(4)">Route berechnen</a></dd>
                 </dl>
             </div>
             <div class="swiper-slide">
@@ -81,7 +85,8 @@
                     <dt>Forschungsinkubator</dt>
                     <dd>Im Zukunftspark 10</dd>
                     <dd>74076 Heilbronn</dd>
-                    <dd><span class="glyphicon glyphicon-map-marker" aria-hidden="true" onclick="standgebaeude(5)"></span><a>Route berechnen</a></dd>
+                    <dd><span class="glyphicon glyphicon-map-marker" aria-hidden="true"
+                              onclick="standgebaeude(5)"></span><a onclick="calc(5)">Route berechnen</a></dd>
                 </dl>
             </div>
         </div>
@@ -90,7 +95,8 @@
     </div>
 </div>
 <div class="preview_container">
-    <span onclick="close_prev()" class="glyphicon glyphicon-remove" style="top:15px;right:15px; font-size:45px;position: absolute;"></span>
+    <span onclick="close_prev()" class="glyphicon glyphicon-remove"
+          style="top:15px;right:15px; font-size:45px;position: absolute;"></span>
     <div id="map"></div>
     <dl class="infos">
         <dt class="name">Name</dt>
@@ -110,6 +116,7 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS3yxVmpNXezscQ5-iCosaj0XyA_DE9Mg">
 </script>
 <script>
+
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
