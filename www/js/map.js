@@ -2,6 +2,10 @@
  * Created by Robin Holzwarth on 16.06.2016.
  */
 var map, marker, lat, lon;
+
+var lat_Gebaeude = [49.122537, 49.148578, 49.275522, 49.112540, 49.154460]
+var len_Gebaude = [9.210931, 9.216501, 9.712354, 9.743762, 9.208087]
+
 function initMap() {
 
 
@@ -19,7 +23,7 @@ navigator.geolocation.getCurrentPosition(function (position) {
     marker = new google.maps.Marker({
         position: {lat: lat, lng: lon},
         map:map,
-        title:'Standort'
+        title:'Position'
     })
 
 })
