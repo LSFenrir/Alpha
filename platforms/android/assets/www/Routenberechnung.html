@@ -10,10 +10,10 @@
     <link rel="stylesheet" type="text/css" href="css/Routenberechnung.css"/>
 
 </head>
-<body >
+<body>
 <img id="banner" src="img/Banner_HHN.jpg">
 <!--#################################################################################################################### Navigationsleiste!-->
-<nav class="navbar navbar-fixed-top">
+<nav id="nav" class="navbar navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
@@ -27,7 +27,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a>Routenberechnung</a></li>
+                <li><a href="Routenberechnung.html">Routenberechnung</a></li>
                 <li><a href="Standortliste.html">HHN Standorte</a></li>
             </ul>
         </div><!--/.nav-collapse -->
@@ -40,23 +40,29 @@
     </div>
 </div>
 <!--#################################################################################################################### Such- bzw- Optionsleiste !-->
-<div id="Suchleiste"><!-- Button to choose a routing location -->
-    <div class="dropup">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-            Route berechnen
-            <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <li><a href="#">Route berechnen</a></li>
-            <li onclick="calcroute(0)"><a href="#">Campus Heilbronn-Sontheim</a></li>
-            <li onclick="calcroute(1)"><a href="#">Campus Heilbronn-Am Europaplatz</a></li>
-            <li onclick="calcroute(2)"><a href="#">Campus Künzelsau-Reinhold-Würth-Hochschule</a></li>
-            <li onclick="calcroute(3)"><a href="#">Campus Schwäbisch Hall</a></li>
-            <li onclick="calcroute(4)"><a href="#">Forschungsinkubator</a></li>
-        </ul>
+
+<nav id="route" class="navbar navbar-fixed-bottom">
+    <div class="container">
+        <div class="navbar-header" data-toggle="collapse" data-target="#routebar"
+             aria-expanded="false" aria-controls="navbar" style="height:50px; text-align: center; cursor: pointer;">
+            <span style="font-size: 18px; top:12px; position: relative;">Route berechnen</span>
+        </div>
+        <div id="routebar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li onclick="calcroute(0)" data-toggle="collapse" data-target="#routebar"><a href="#">Campus
+                    Heilbronn-Sontheim</a></li>
+                <li onclick="calcroute(1)" data-toggle="collapse" data-target="#routebar"><a href="#">Campus
+                    Heilbronn-Am Europaplatz</a></li>
+                <li onclick="calcroute(2)" data-toggle="collapse" data-target="#routebar"><a href="#">Campus
+                    Künzelsau-Reinhold-Würth-Hochschule</a></li>
+                <li onclick="calcroute(3)" data-toggle="collapse" data-target="#routebar"><a href="#">Campus Schwäbisch
+                    Hall</a></li>
+                <li onclick="calcroute(4)" data-toggle="collapse" data-target="#routebar"><a href="#">Forschungsinkubator</a>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
     </div>
-</div>
+</nav>
 
 
 <!--#################################################################################################################### Scripte !-->

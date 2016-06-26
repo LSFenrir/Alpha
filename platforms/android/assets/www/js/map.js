@@ -73,22 +73,22 @@ function standgebaeude(standort) {
     if (!map) {
 
        map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: lat_Gebaeude[standort-1], lng: len_Gebaude[standort-1]},
+            center: {lat: lat_Gebaeude[standort], lng: len_Gebaude[standort]},
             zoom: 18
         });
     }
     else{
-        map.setCenter({lat:lat_Gebaeude[standort-1],lng:len_Gebaude[standort-1]});
+        map.setCenter({lat:lat_Gebaeude[standort],lng:len_Gebaude[standort]});
     }
     marker = new google.maps.Marker({
-        position: {lat: lat_Gebaeude[standort-1], lng: len_Gebaude[standort-1]},
+        position: {lat: lat_Gebaeude[standort], lng: len_Gebaude[standort]},
         map:map,
         title:'Position'
     });
 
-    $("dt.name").html(sname[standort-1]);
-    $("dd.straße").html(sstrasse[standort-1]);
-    $("dd.ort").html(sort[standort-1]);
+    $("dt.name").html(sname[standort]);
+    $("dd.straße").html(sstrasse[standort]);
+    $("dd.ort").html(sort[standort]);
     $(".preview_container").css("display","block");
 
 

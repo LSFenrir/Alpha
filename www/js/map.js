@@ -98,7 +98,7 @@ function standgebaeude(standort) {
 function calcroute(standort){
 
 
-    calculateAndDisplayRoute(lat_Gebaeude[standort],len_Gebaude[standort]);
+    calculateAndDisplayRoute(lat_Gebaeude[standort-1],len_Gebaude[standort-1]);
     directionsDisplay.setMap(map);
 
 }
