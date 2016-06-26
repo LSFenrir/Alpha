@@ -18,7 +18,7 @@ nav.navbar a{
 }
 nav.navbar button{  }
 
-.nav>li>a:focus, .nav>li>a:hover {
+nav#nav .nav>li>a:focus,nav#nav .nav>li>a:hover {
 
     background-color: transparent;
     color: black;
@@ -28,7 +28,7 @@ nav.navbar button span{
     background-color: black;
 }
 
-ul.nav.navbar-nav{
+nav#nav ul.nav.navbar-nav{
 
     background-image: url("../img/Logo_HHN.png");
     background-position: 95%;
